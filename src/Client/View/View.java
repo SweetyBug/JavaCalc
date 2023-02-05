@@ -1,10 +1,7 @@
-package Core.View;
+package Client.View;
 
-import Core.Models.Complex;
+import Core.Models.Menu;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 public class View {
@@ -20,6 +17,7 @@ public class View {
         System.out.println();
     }
 
+    //Меню выбора действия
     public int choiceMenu(){
         Menu menu = new Menu();
         menu.getMenu();
@@ -28,7 +26,7 @@ public class View {
         int user = in.nextInt();
         return user;
     }
-
+    //Меню выбора чисел
     public int choice() {
         System.out.println("1. Комлексные числа");
         System.out.println("2. Рациональные числа");
@@ -38,6 +36,7 @@ public class View {
         return user;
     }
 
+    //Обнулению имеющегося результата
     public double zeroingOut() {
         return 0.0;
     }

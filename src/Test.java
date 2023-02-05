@@ -1,8 +1,6 @@
 import Core.Models.*;
 import Core.Presenters.Presenter;
-import Core.View.View;
-
-import java.util.Scanner;
+import Client.View.View;
 
 public class Test {
     public static void main(String[] args) {

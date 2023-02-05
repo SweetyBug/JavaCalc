@@ -1,4 +1,4 @@
-package Core.View;
+package Core.Models;
 
 import java.util.ArrayList;
 import java.util.Arrays;

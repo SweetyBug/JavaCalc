@@ -3,7 +3,7 @@ package Core.Presenters;
 import Core.Models.CalcModel;
 import Core.Models.Complex;
 import Core.Models.Model;
-import Core.View.View;
+import Client.View.View;
 
 public class Presenter<T extends CalcModel>{
     View view;
