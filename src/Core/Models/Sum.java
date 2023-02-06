@@ -1,6 +1,6 @@
 package Core.Models;
 
-public class Sum extends CalcModel {
+public class Sum extends CalcModel implements Result {
     public Sum() {
 
     }

@@ -12,4 +12,14 @@ public abstract class CalcModel implements Model{
     public void setY(double value) {
         this.y = value;
     }
+
+    @Override
+    public double result() {
+        return 0;
+    }
+
+    @Override
+    public String resultForComplex(Complex c1, Complex c2) {
+        return null;
+    }
 }

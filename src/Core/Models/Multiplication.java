@@ -1,6 +1,6 @@
 package Core.Models;
 
-public class Multiplication extends CalcModel {
+public class Multiplication extends CalcModel implements Result {
     public Multiplication() {
 
     }

@@ -1,8 +1,8 @@
+package Client.View;
 import Core.Models.*;
 import Core.Presenters.Presenter;
-import Client.View.View;
 
-public class Test {
+public class Program {
     public static void main(String[] args) {
         View view = new View();
         double lastResult = 0.0;
@@ -13,54 +13,46 @@ public class Test {
                 if (choiceUser == 1) {
                     choiceUser = view.choiceMenu();
                     switch (choiceUser) {
-                        case 1:
+                        case 1 -> {
                             Presenter<Sum> pSum = new Presenter<>(new Sum(), new View());
                             pSum.buttonClickComplex();
-                            break;
-                        case 2:
+                        }
+                        case 2 -> {
                             Presenter<Substation> pSub = new Presenter<>(new Substation(), new View());
                             pSub.buttonClickComplex();
-                            break;
-                        case 3:
+                        }
+                        case 3 -> {
                             Presenter<Division> pDiv = new Presenter<>(new Division(), new View());
                             pDiv.buttonClickComplex();
-                            break;
-                        case 4:
+                        }
+                        case 4 -> {
                             Presenter<Multiplication> pMul = new Presenter<>(new Multiplication(), new View());
                             pMul.buttonClickComplex();
-                            break;
-                        case 5:
-                            lastResult = view.zeroingOut();
-                            break;
-                        case 6:
-                            program = false;
-                            break;
+                        }
+                        case 5 -> lastResult = view.zeroingOut();
+                        case 6 -> program = false;
                     }
                 } else if (choiceUser == 2) {
                     double number = view.getValue("Введите число: ");
                     switch (choiceUser) {
-                        case 1:
+                        case 1 -> {
                             Presenter<Sum> pSum = new Presenter<>(new Sum(), new View());
                             lastResult = pSum.buttonClick(number);
-                            break;
-                        case 2:
+                        }
+                        case 2 -> {
                             Presenter<Substation> pSub = new Presenter<>(new Substation(), new View());
                             lastResult = pSub.buttonClick(number);
-                            break;
-                        case 3:
+                        }
+                        case 3 -> {
                             Presenter<Division> pDiv = new Presenter<>(new Division(), new View());
                             lastResult = pDiv.buttonClick(number);
-                            break;
-                        case 4:
+                        }
+                        case 4 -> {
                             Presenter<Multiplication> pMul = new Presenter<>(new Multiplication(), new View());
                             lastResult = pMul.buttonClick(number);
-                            break;
-                        case 5:
-                            lastResult = view.zeroingOut();
-                            break;
-                        case 6:
-                            program = false;
-                            break;
+                        }
+                        case 5 -> lastResult = view.zeroingOut();
+                        case 6 -> program = false;
                     }
                 } else {
                     return;
@@ -68,28 +60,24 @@ public class Test {
             } else {
                 int choiceUser = view.choiceMenu();
                 switch (choiceUser) {
-                    case 1:
+                    case 1 -> {
                         Presenter<Sum> pSum = new Presenter<>(new Sum(), new View());
                         lastResult = pSum.buttonClick(lastResult);
-                        break;
-                    case 2:
+                    }
+                    case 2 -> {
                         Presenter<Substation> pSub = new Presenter<>(new Substation(), new View());
                         lastResult = pSub.buttonClick(lastResult);
-                        break;
-                    case 3:
+                    }
+                    case 3 -> {
                         Presenter<Division> pDiv = new Presenter<>(new Division(), new View());
                         lastResult = pDiv.buttonClick(lastResult);
-                        break;
-                    case 4:
+                    }
+                    case 4 -> {
                         Presenter<Multiplication> pMul = new Presenter<>(new Multiplication(), new View());
                         lastResult = pMul.buttonClick(lastResult);
-                        break;
-                    case 5:
-                        lastResult = view.zeroingOut();
-                        break;
-                    case 6:
-                        program = false;
-                        break;
+                    }
+                    case 5 -> lastResult = view.zeroingOut();
+                    case 6 -> program = false;
                 }
             }
         }

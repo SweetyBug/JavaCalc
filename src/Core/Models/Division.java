@@ -1,6 +1,6 @@
 package Core.Models;
 
-public class Division extends CalcModel {
+public class Division extends CalcModel implements Result{
     public Division() {
 
     }

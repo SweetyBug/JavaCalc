@@ -1,8 +1,6 @@
 package Core.Models;
 
-public interface Model {
-    double result();
+public interface Model extends Result {
     void setX(double value);
     void setY(double value);
-    String resultForComplex(Complex c1, Complex c2);
 }

@@ -1,6 +1,6 @@
 package Core.Models;
 
-public class Substation extends CalcModel{
+public class Substation extends CalcModel implements Result {
 
     public Substation() {
 
